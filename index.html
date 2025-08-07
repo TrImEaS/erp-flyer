@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flyer ERP GestionS</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(120deg, #141e30, #243b55);
+        color: #f5f9ff;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+      header {
+        padding: 40px 20px 20px;
+        text-align: center;
+        animation: fadeInDown 1s ease forwards;
+      }
+      header h1 {
+        font-size: 3rem;
+        color: #00d8ff;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+      }
+      header p {
+        font-size: 1.2rem;
+        color: #7fdbff;
+        margin-top: 0;
+      }
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px 20px 60px;
+      }
+      section {
+        margin-bottom: 40px;
+        animation: fadeInUp 1s ease forwards;
+      }
+      section h2 {
+        font-size: 1.8rem;
+        color: #00e1ff;
+        border-bottom: 3px solid #00aaff;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      ul li {
+        background: rgba(0, 168, 255, 0.1);
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgb(0 168 255 / 0.15);
+        position: relative;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+        cursor: default;
+      }
+      ul li:hover {
+        background: rgba(0, 168, 255, 0.25);
+      }
+      .price {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #00bfff;
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto 0;
+        border: 3px solid #00bfff;
+        border-radius: 15px;
+        box-shadow: 0 0 15px #00bfff88;
+        animation: pulse 3s ease-in-out infinite;
+      }
+      .extra {
+        background: rgba(0, 168, 255, 0.12);
+        border-radius: 15px;
+        margin: 30px auto 0;
+        padding: 20px 30px;
+        box-shadow: 0 0 10px #00aaff66 inset;
+        animation: fadeInRight 1s ease forwards;
+      }
+      .extra strong {
+        color: #00caff;
+        font-weight: 600;
+        font-size: 1.4rem;
+      }
+      .extra ul {
+        margin-top: 12px;
+      }
+      .sas {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      footer {
+        text-align: center;
+        color: #66ccffaa;
+        font-size: 0.9rem;
+        padding-bottom: 15px;
+        margin-top: 60px;
+        letter-spacing: 0.8px;
+        animation: fadeInUp 1.3s ease forwards;
+      }
+      /* Animations */
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInRight {
+        0% {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 15px #00bfff88;
+        }
+        50% {
+          box-shadow: 0 0 30px #00bfffcc;
+        }
+      }
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2.2rem;
+        }
+        .price {
+          max-width: 100%;
+          font-size: 1.8rem;
+        }
+        .extra {
+          max-width: 100%;
+          padding: 15px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ERP GestionS</h1>
+      <p>Tu solución integral para la gestión empresarial moderna</p>
+    </header>
+    <main>
+      <section aria-label="Módulos del ERP">
+        <h2>Módulos incluidos</h2>
+        <ul>
+          <li>
+            <strong>Archivos:</strong> Control de clientes, proveedores,
+            precios, artículos y más
+          </li>
+          <li>
+            <strong>Ventas:</strong> Facturación en blanco y negro, con
+            posibilidad de facturar fechas antiguas
+          </li>
+          <li>
+            <strong>Consultas:</strong> Ventas por fecha, movimientos de stock,
+            proveedores, entre otros
+          </li>
+          <li><strong>Procesos:</strong> Control de stock eficiente</li>
+          <li>
+            <strong>Tesorería:</strong> Egresos e ingresos manuales para control
+            de caja
+          </li>
+        </ul>
+      </section>
+      <section aria-label="Facturación electrónica y soporte">
+        <h2>Servicios clave</h2>
+        <ul>
+          <li><strong>Facturación electrónica vía ARCA</strong></li>
+          <li>
+            <strong>Soporte vía WhatsApp</strong> con respuesta garantizada en
+            menos de 24 horas
+          </li>
+          <li>
+            <strong>Hasta 10 usuarios simultáneos</strong> con creación de
+            perfiles jerárquicos para control
+          </li>
+          <li>
+            <strong>Mantenimiento incluido:</strong> funcionalidades,
+            optimización y diseño actualizados
+          </li>
+          <li>
+            <strong>Backups diarios</strong> con historial de hasta 7 días para
+            máxima seguridad
+          </li>
+          <li>
+            <strong>Multiplataforma:</strong> Acceso vía web desde PC, mobile,
+            notebook, etc.
+          </li>
+          <li>
+            <strong>Diseño admin personalizable</strong> y flyer de regalo
+          </li>
+        </ul>
+      </section>
+      <div class="price" aria-label="Precio mensual">
+        💸 Precio mensual: $150.000 ARS 💸
+      </div>
+      <div class="extra" aria-label="Pago único y configuraciones especiales">
+        <strong class="sas">Pago único de $50.000 ARS por:</strong>
+        <ul>
+          <li>
+            Instalación y configuración de ticketera (drivers, pruebas,
+            impresión directa)
+          </li>
+          <li>Alta y configuración de puntos de venta para AFIP/ARCA</li>
+          <li>Integración completa con ARCA</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      ERP GestionS – Moderniza y controla tu empresa con tecnología confiable.
+      <br />
+      Precio asegurado minimo por 3 meses
+    </footer>
+  </body>
+</html>
